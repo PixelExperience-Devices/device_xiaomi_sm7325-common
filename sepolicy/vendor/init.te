@@ -1,1 +1,2 @@
 allow init hal_fingerprint_default:process { ptrace };
+allow init adsprpcd_file:file mounton;
