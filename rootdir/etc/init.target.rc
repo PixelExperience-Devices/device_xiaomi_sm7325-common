@@ -106,6 +106,9 @@ on post-fs-data
     mkdir /data/vendor/wlan_logs 0777 root shell
     mkdir /data/vendor/nfc 0777 nfc nfc
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+    
     # Create fingerprint related directory
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
