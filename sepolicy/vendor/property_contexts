@@ -29,3 +29,6 @@ persist.vendor.sys.provision.status      u:object_r:vendor_mlipay_prop:s0
 # Xiaomi specific build properties
 ro.miui.                                 u:object_r:exported_system_prop:s0
 ro.product.mod_device                    u:object_r:build_prop:s0
+
+# Thermal
+vendor.sys.thermal.                     u:object_r:vendor_thermal_normal_prop:s0
