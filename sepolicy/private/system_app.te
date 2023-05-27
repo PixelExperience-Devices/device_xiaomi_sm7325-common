@@ -4,4 +4,7 @@ dontaudit system_app {
   tracingproxy_service
 }:service_manager find;
 
+binder_call(system_app, storaged)
+binder_call(system_app, system_suspend)
+
 hal_client_domain(system_app, hal_mlipay)
