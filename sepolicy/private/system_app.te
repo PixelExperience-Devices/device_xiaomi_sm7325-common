@@ -1,5 +1,7 @@
-hal_client_domain(system_app, hal_mlipay)
+dontaudit system_app {
+  system_suspend_control_internal_service
+  system_suspend_control_service
+  tracingproxy_service
+}:service_manager find;
 
-allow system_app proc_pagetypeinfo:file { read };
-allow system_app sysfs_zram:dir search;
-allow system_app sysfs_zram:file r_file_perms;
+hal_client_domain(system_app, hal_mlipay)
