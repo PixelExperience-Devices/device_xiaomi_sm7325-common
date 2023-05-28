@@ -16,3 +16,4 @@ allow hal_camera_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_man
 
 allow vendor_hal_perf_default hal_camera_default:file { read };
 allow hal_camera_default sysfs_thermal:file { write };
+allow hal_camera_default vendor_xdsp_device:chr_file { ioctl };
