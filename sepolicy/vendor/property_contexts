@@ -4,6 +4,8 @@ ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
 # Camera
 vendor.camera.sensor.    u:object_r:vendor_camera_sensor_prop:s0
 ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
+ro.camera.req.fmq.size             u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size             u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
@@ -11,6 +13,13 @@ persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
 ro.hardware.fp    u:object_r:vendor_fp_prop:s0
 
+# Global
+ro.product.marketname  u:object_r:build_prop:s0
+
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
+
+# Xiaomi specific build properties
+ro.miui.               u:object_r:exported_system_prop:s0
+ro.product.mod_device              u:object_r:build_prop:s0
