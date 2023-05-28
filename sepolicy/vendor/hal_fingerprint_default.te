@@ -32,3 +32,5 @@ allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 # Data
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default hal_fingerprint_default:netlink_socket { read };
+allow hal_fingerprint_default vendor_fingerprint_device:chr_file { ioctl };
