@@ -558,3 +558,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+    
+# Doze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
