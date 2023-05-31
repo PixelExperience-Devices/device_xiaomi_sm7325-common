@@ -177,6 +177,9 @@ on boot
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
 
+    # Create hvdcp_opti directory
+    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
+
 on init && property:ro.boot.mode=charger
     mount_all /vendor/etc/charger_fstab.qcom --early
     write /sys/kernel/boot_adsp/boot 1
