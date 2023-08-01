@@ -172,6 +172,7 @@ include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Soong
 SOONG_CONFIG_NAMESPACES += xiaomiSm7325Vars
