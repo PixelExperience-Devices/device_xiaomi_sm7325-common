@@ -21,6 +21,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Maintainer
+ro.spos.maintainer=Kartik
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
