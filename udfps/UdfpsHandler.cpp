@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm8350"
+#define LOG_TAG "UdfpsHandler.xiaomi_sm7325"
 
 #include <android-base/logging.h>
 

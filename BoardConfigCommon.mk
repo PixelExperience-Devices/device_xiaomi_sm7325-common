@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/xiaomi/sm8350-common
+COMMON_PATH := device/xiaomi/sm7325-common
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -83,7 +83,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE)
 TARGET_KERNEL_NO_GCC := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7325
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/xiaomi_QGKI.config
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
@@ -174,10 +174,10 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong
-SOONG_CONFIG_NAMESPACES += xiaomiSm8350Vars
-SOONG_CONFIG_xiaomiSm8350Vars += \
+SOONG_CONFIG_NAMESPACES += xiaomiSm7325Vars
+SOONG_CONFIG_xiaomiSm7325Vars += \
     vibrator_use_effect_stream
-SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream ?= false
+SOONG_CONFIG_xiaomiSm7325Vars_vibrator_use_effect_stream ?= false
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -210,4 +210,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
-include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
+include vendor/xiaomi/sm7325-common/BoardConfigVendor.mk
