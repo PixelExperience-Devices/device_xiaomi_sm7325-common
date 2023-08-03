@@ -50,6 +50,7 @@ on charger
 
     setprop sys.usb.controller "a600000.dwc3"
     setprop sys.usb.configfs 1
+    start vendor.power_off_alarm
 
 on boot
     mkdir /config/usb_gadget/g1 0770
