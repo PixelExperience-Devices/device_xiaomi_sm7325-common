@@ -164,14 +164,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <version>2.0-1</version>
         <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
+            <name>IBluetoothAudioProviderFactory</name>
             <instance>default</instance>
         </interface>
    </hal>
    <hal format="aidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
         <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
+            <name>IBluetoothAudioProviderFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
