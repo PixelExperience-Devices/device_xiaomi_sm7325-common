@@ -164,7 +164,6 @@ on boot
     chmod 0660 /dev/cpuset/camera-daemon/tasks
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
-    chmod 440 /proc/net/unix
 
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
