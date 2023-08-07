@@ -606,6 +606,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+<<<<<<< HEAD
     <hal format="hidl">
         <name>vendor.dolby.hardware.dms</name>
         <transport>hwbinder</transport>
@@ -635,4 +636,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+=======
+>>>>>>> parent of f981b64 (sm7325-common: Add Moto dolby support)
 </manifest>
