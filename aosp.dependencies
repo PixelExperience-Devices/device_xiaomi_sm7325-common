@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "remote": "pixel"
+  },
+  {
+    "repository": "kernel_xiaomi_sm7325",
+    "target_path": "kernel/xiaomi/sm7325",
+    "branch"      : "thirteen"
+  },
+  {
+    "repository"  : "vendor_xiaomi_sm7325-common",
+    "target_path" : "vendor/oneplus/sm7325-common",
+    "branch"      : "thirteen",
+    "remote"      : "pixel-devices-blobs"
+  },
+]
