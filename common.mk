@@ -552,6 +552,9 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    vendor.sys.video.disable.ubwc=1
+    
 PRODUCT_BOOT_JARS += \
     WfdCommon
     
