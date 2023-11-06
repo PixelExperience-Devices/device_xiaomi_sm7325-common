@@ -3,3 +3,8 @@ persist.vendor.dpm.feature=11
 
 # HWUI
 debug.hwui.skia_atrace_enabled=false
+
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.max_sleep_time_millis=40000
+suspend.short_suspend_backoff_enabled=true
