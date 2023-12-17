@@ -51,3 +51,7 @@ genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys1/wakeup 
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/extcon u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,wpss@8a00000/subsys3/wakeup  u:object_r:sysfs_wakeup:s0
+
+# Display Nodes
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/name                      u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon3/name                      u:object_r:vendor_sysfs_graphics:s0
