@@ -181,6 +181,10 @@ SOONG_CONFIG_xiaomiSm7325Vars += \
     vibrator_use_effect_stream
 SOONG_CONFIG_xiaomiSm7325Vars_vibrator_use_effect_stream ?= false
 
+# Use sha256 for dm-verity partitions
+BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
